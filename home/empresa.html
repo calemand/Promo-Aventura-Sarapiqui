@@ -43,7 +43,7 @@
           <p class="card-text"><b>Dirección:</b> {{ empresa.empresa_direccion }}</p>
           <p class="card-text"><b>Correo:</b> {{ empresa.empresa_correo }}</p>
           <p class="card-text"><b>Teléfono Fijo:</b> {{ empresa.telefono_fijo }}</p>
-          <p class="card-text"><b>WhatsApp:</b> {{ empresa.empresa_whatsapp }}</p>
+          <p class="card-text"><b>WhatsApp:</b><a href="{{  'http://api.whatsapp.com/send?phone='  + empresa.empresa_whatsapp}} ">{{ empresa.empresa_whatsapp }}</a></p>
           <p class="card-text"><b>Sitio:</b> {{ empresa.empresa_sitio }}</p>
           <p class="card-text"><b>Facebook:</b> {{ empresa.empresa_face }}</p>
           <p class="card-text"><b>Instagrang:</b> {{ empresa.empresa_insta }}</p>
